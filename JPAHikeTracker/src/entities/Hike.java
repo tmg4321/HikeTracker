@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OrderBy;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
@@ -29,8 +30,10 @@ public class Hike {
 	private int time;
 	
 	@OneToMany(mappedBy = "hike", cascade=CascadeType.ALL)
+	@OrderBy("id ASC")
 	@JsonManagedReference
 	private Set<Picture> pictures;
+	
 
 // getters & setters
 	

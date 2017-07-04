@@ -21,7 +21,7 @@ public class Picture {
 	@JoinColumn(name = "hike_id")
 	@JsonBackReference
 	private Hike hike;
-	 
+	
 	private String url;
 
 // getters & setters

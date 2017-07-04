@@ -67,10 +67,10 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `hiketrackdb`;
-INSERT INTO `hike` (`id`, `name`, `distance`, `elevation`, `time`) VALUES (DEFAULT, 'Bluffs Regional Park', 2.4, 200, 75);
-INSERT INTO `hike` (`id`, `name`, `distance`, `elevation`, `time`) VALUES (DEFAULT, 'South Valley Park Trail', 3.0, 500, 88);
-INSERT INTO `hike` (`id`, `name`, `distance`, `elevation`, `time`) VALUES (DEFAULT, 'Mills Lake', 5.3, 1000, 150);
-INSERT INTO `hike` (`id`, `name`, `distance`, `elevation`, `time`) VALUES (DEFAULT, 'Ouzel Falls', 5.4, 900, 140);
+INSERT INTO `hike` (`id`, `name`, `distance`, `elevation`, `time`) VALUES (DEFAULT, 'Bluffs Regional Park', 2.4, 200, 65);
+INSERT INTO `hike` (`id`, `name`, `distance`, `elevation`, `time`) VALUES (DEFAULT, 'South Valley Park Trail', 3.0, 500, 80);
+INSERT INTO `hike` (`id`, `name`, `distance`, `elevation`, `time`) VALUES (DEFAULT, 'Mills Lake', 5.3, 1000, 140);
+INSERT INTO `hike` (`id`, `name`, `distance`, `elevation`, `time`) VALUES (DEFAULT, 'Ouzel Falls', 5.4, 900, 125);
 
 COMMIT;
 
@@ -86,4 +86,3 @@ INSERT INTO `picture` (`id`, `hike_id`, `url`) VALUES (DEFAULT, 3, 'http://www.p
 INSERT INTO `picture` (`id`, `hike_id`, `url`) VALUES (DEFAULT, 4, 'http://www.rockymountainhikingtrails.com/rocky-mountain-photos/bluebird-lake/upper-copeland-falls-rmnp.jpg');
 
 COMMIT;
-
